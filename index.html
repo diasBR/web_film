@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Bootstrap</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>WebFilm</h1>
+                <button type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <nav class="collapse navbar-collapse
+                justify-content-end"
+                id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" 
+                            href="#lancamentos">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" 
+                            href="#destaques">Destaques</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+
+    <section id="lancamentos">
+        <div class="h2">
+            <h2>Lançamentos</h2>
+        </div>
+    
+        <div class="container">
+
+            <div class="carousel carousel carousel-fade slide" 
+            data-bs-ride="carousel"
+            id="carousel-exemplo">
+    
+            <div class="carousel-inner">
+                <div class="carousel-item active"
+                data-bs-interval="3000">
+                    <img class="d-block w-100" src="./image/all.png">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item"
+                data-bs-interval="3000">
+                    <img class="d-block w-100" src="./image/Oppenheimer.jpeg">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item"
+                data-bs-interval="3000">
+                    <img class="d-block w-100" src="./image/aderiva.webp">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev"
+            type="button" data-bs-target="#carousel-exemplo"
+            data-bs-slide="prev">
+                <span class="carousel-control-prev-icon">
+                </span>
+            </button>
+    
+            <button class="carousel-control-next"
+            type="button" data-bs-target="#carousel-exemplo"
+            data-bs-slide="next">
+                <span class="carousel-control-next-icon">
+                </span>
+            </button>
+    
+            <div class="carousel-indicators">
+                <button type="button" class="active"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="0">
+                </button>
+    
+                <button type="button" 
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="1">
+                </button>
+    
+                <button type="button" 
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="2">
+                </button>
+            </div>
+    
+            </div>
+        </div>   
+    </section>  
+
+    <section id="destaques">
+        <div class="container">
+            <div class="h2">
+                <h2>Destaques</h2>
+            </div>
+
+            <div class="container c1">
+                <div class="row">
+        
+                    <div class="col-12 col-md-6 col-lg-4 custom-col">
+
+                        <article class="card">    
+                            <img src="./image/aderiva.webp">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Nome do filme
+                                </h4>
+                                
+                                <p class="card-text">
+                                    Categoria: Ação; Comédia
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Sinopse
+                                </a>
+                            </div>
+                            <footer class="card-footer">
+                                Lançado em
+                                <time>
+                                    10/08/2023
+                                </time>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 custom-col">
+                        <article class="card">    
+                            <img src="./image/Oppenheimer.jpeg">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Nome do filme
+                                </h4>
+                                
+                                <p class="card-text">
+                                    Categoria: Ação; Comédia
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Sinopse
+                                </a>
+                            </div>
+                            <footer class="card-footer">
+                                Lançado em
+                                <time>
+                                    10/08/2023
+                                </time>
+                            </footer>
+                        </article>
+                    </div>
+
+                <div class="col-12 col-md-6 col-lg-4 custom-col">
+                        <article class="card">    
+                            <img src="./image/gameimit.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Nome do filme
+                                </h4>
+                                
+                                <p class="card-text">
+                                    Categoria: Ação; Comédia
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Sinopse
+                                </a>
+                            </div>
+                            <footer class="card-footer">
+                                Lançado em
+                                <time>
+                                    10/08/2023
+                                </time>
+                            </footer>
+                        </article>
+                    </div>
+                
+                <!-- </div> -->
+            <!-- </div> -->
+
+            <!-- <div class="container">
+                <div class="row"> -->
+        
+                    <div class="col-12 col-md-6 col-lg-4 custom-col">
+                        <article class="card">    
+                            <img src="./image/aderiva.webp">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Nome do filme
+                                </h4>
+                                
+                                <p class="card-text">
+                                    Categoria: Ação; Comédia
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Sinopse
+                                </a>
+                            </div>
+                            <footer class="card-footer">
+                                Lançado em
+                                <time>
+                                    10/08/2023
+                                </time>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 custom-col">
+                        <article class="card">    
+                            <img src="./image/Oppenheimer.jpeg">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Nome do filme
+                                </h4>
+                                
+                                <p class="card-text">
+                                    Categoria: Ação; Comédia
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Sinopse
+                                </a>
+                            </div>
+                            <footer class="card-footer">
+                                Lançado em
+                                <time>
+                                    10/08/2023
+                                </time>
+                            </footer>
+                        </article>
+                    </div>
+
+                <div class="col-12 col-md-6 col-lg-4 custom-col">
+                        <article class="card">    
+                            <img src="./image/gameimit.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Nome do filme
+                                </h4>
+                                
+                                <p class="card-text">
+                                    Categoria: Ação; Comédia
+                                </p>
+                                <a href="#" class="btn btn-primary">
+                                    Sinopse
+                                </a>
+                            </div>
+                            <footer class="card-footer">
+                                Lançado em
+                                <time>
+                                    10/08/2023
+                                </time>
+                            </footer>
+                        </article>
+                    </div>
+                
+                <!-- </div> -->
+            </div>
+            
+        </div>
+    </section>
+
+    </div>
+
+
+
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
